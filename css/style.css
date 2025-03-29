@@ -1,0 +1,277 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Poppins,sans-serif;
+}
+body{
+    background-image: url(../img/WhatsApp\ Image\ 2025-03-28\ at\ 4.37.40\ PM.jpeg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover ;
+    background-position:center 42%;
+    background-repeat: no-repeat;
+}
+ul{
+    list-style: none;
+}
+.profile{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.37);
+}
+.profile .txt h1,h2{
+    font-size: 55px;
+    font-weight: bold;
+}
+.profile .txt h4{
+    color: (255, 255, 255, .8);
+}
+.profile .txt h4 span{
+    border-bottom: 2px solid #3799f4;
+    padding: 5px;
+    color: white;
+    font-weight: bold;
+}
+.profile .txt h2{
+    font-family: "Cairo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+    "slnt" 0;
+}
+
+.nav-menu {
+    padding-top: 30px;
+}
+.nav-menu ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding-left: 0px;
+    margin-left: -10px;
+}
+.nav-menu a {
+    color: #ffffffa8;
+    padding: 12px 8px;
+    margin-bottom: 8px;
+    transition: 0.5s;
+    font-size: 15px;
+    text-decoration: none;
+    font-size: 19px;
+    position: relative;
+    font-weight: bold;
+}
+.nav-menu .active{
+    position: relative;
+}
+.nav-menu .active::before{
+    content: "";
+    position: absolute;
+    width: 25px;
+    left: 10px;
+    bottom: -8px;
+    height: 4px;
+    background-color: #3799f4;
+}
+.nav-menu a::before{
+    content: "";
+    position: absolute;
+    width: 0px;
+    border-radius: 2px;
+    height: 0px;
+    background-color: #3799f4;
+}
+.nav-menu a:hover::before{
+    animation: l-to-r 0s linear forwards;
+}
+@keyframes l-to-r{
+    100%{
+        left: 10px;
+        bottom: 0px;
+        width: 25px;
+        height: 4px;
+    }
+}
+.nav-menu a:hover{
+    color: white;
+}
+.icon a{
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+    border-radius: 50%;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    justify-content: center;
+    align-content: center;
+    background-color: rgba(255,255,255,.1);
+    transition: .4s;
+}
+.icon a:hover{
+    background-color: #3799f4;
+    color: white;
+}
+.navbar{
+    justify-content: space-between;
+    background-color: rgba(40,52,56,.968);
+}
+.collapse{
+    justify-content: end;
+}
+.navbar a {
+    transition: 0.5s;
+    position: relative;
+}
+.navbar .active{
+    position: relative;
+}
+.navbar .active::before{
+    content: "";
+    position: absolute;
+    width: 25px;
+    left: 10px;
+    bottom: 0px;
+    height: 4px;
+    background-color: #3799f4;
+}
+.navbar a::before{
+    content: "";
+    position: absolute;
+    width: 0px;
+    border-radius: 2px;
+    height: 0px;
+    background-color: #3799f4;
+}
+.navbar a:hover::before{
+    animation: l-to-r 0s linear forwards;
+}
+.navbar-brand{
+    font-size: 28px;
+}
+section .container-img {
+    background: rgba(40, 52, 56, .968);
+    padding: 30px;
+    margin-top: 10px;
+}
+.about{
+    color: white;
+}
+.about .content h3 {
+    font-weight: 700;
+    font-size: 26px;
+    color: #3799f4;
+}  
+.about .content ul {
+    list-style: none;
+    padding: 0;
+}
+.about .content ul li {
+    padding-bottom: 10px;
+}
+.about .content ul i {
+    font-size: 20px;
+    padding-right: 2px;
+    color: #149ddd;
+}
+.skills .progress{
+    height:50px;
+    display:block;
+    background:0 0;
+}
+.skills .progress .skill{
+    padding:10px 0;
+    margin:0px 0 6px;
+    display:block;
+    font-weight:600;
+    color:#fff
+}
+.skills .progress .skill .val{
+    float:right;
+    font-style:normal
+}
+.skills .progress-bar-wrap{
+    background:rgba(255,255,255,.15);
+}
+.skills .progress-bar{
+    width:1px;
+    height:10px;
+    transition:.9s;
+    background-color:#3799f4
+}
+.project-card{
+    width: 100%;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    background-color: #fff;
+    overflow: hidden;
+    margin-bottom: 25px;
+    transition: 1s;
+    height: 300px;
+}
+.project-card img{
+    height: 210px;
+}
+.project-card:hover{
+    transform: scale(1.1);
+}
+.project-card:hover img{
+    opacity: .8;
+}
+.project-txt{
+    padding: 10px;
+}
+.project-txt p{
+    font-size: .75em;
+    color: #222;
+}
+.card{
+    width: 48%;
+    background-color: rgba(255, 255, 255, .08);
+    padding: 8px;
+    font-size: 14px;
+    margin-right: 10px;
+    height: 110px;
+    display: flex;
+}
+.contact h4{
+    font-size: 23px;
+    display: flex;
+}
+.card i{
+    width: 40px;
+    color: #149ddd;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .4s;
+    margin-right: 8px;
+}
+.card p{
+    margin-left: 40px;
+}
+@media(max-width:991px){
+    body{
+        background-image: url(../img/Promo-Website-Website\ portrait\ content.jpeg);
+        background-position:center 10%;
+        height: auto;
+    }
+    .profile .txt h1,h2{
+        font-size: 35px;
+    }
+    .profile{
+        padding-left: 10px;
+    }
+    .icon a{
+        color: white;
+    }
+    .img-fluid{
+        height: 300px;
+        width: 50%;
+        margin: auto;
+    }
+    .section-title{
+        margin-top: 50px;
+    }
+}
