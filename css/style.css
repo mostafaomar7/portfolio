@@ -274,4 +274,7 @@ section .container-img {
     .section-title{
         margin-top: 50px;
     }
+    .card{
+        width: 100%;
+    }
 }
